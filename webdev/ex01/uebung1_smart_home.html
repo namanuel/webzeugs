@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BSA Smart Home</title>
+		
+</head>
+<body>
+	<header>
+	<h1>BSA Smart Home</h1>
+	</header>
+	<nav>
+		<a href="">Home</a><br>
+		<a href="#schlafzimmer">Schlafzimmer</a><br>
+		<a href="#wohnzimmer">Wohnzimmer</a> <br>
+		<a href="#esszimmer">Esszimmer</a><br>
+		<a href="#küche">Küche</a><br>
+		<a href="#außenbereich">Außenbereich</a><br>
+	</nav>
+	<main>
+		
+			
+			
+		
+	<section id="schlafzimmer">
+		<h2>Schlafzimmer</h2>
+		<div>
+			<h3>Licht</h3>
+			<img src="Bilder/smart_home/light_off.png" alt="off" id="light1" onclick="changeImage(this);">
+			<p>Licht aus</p>
+		</div>
+		<div>
+			<h3>Temperatur</h3>
+			<img src="Bilder/smart_home/temp_low.jpg" alt="">
+			<p>Temperatur 15°</p>
+		</div>
+	</section>	
+
+	<section id="wohnzimmer">
+		<h2>Wohnzimmer</h2>
+		<div>
+			<h3>Licht</h3>
+			<img src="Bilder/smart_home/light_off.png" alt="off" id="light2" onclick="changeImage(this);">
+			<p>Licht aus</p>
+		</div>
+		<div>
+			<h3>Temperatur</h3>
+			<img src="Bilder/smart_home/temp_high.jpg" alt="">
+			<p>Temperatur 30°</p>
+		</div>
+	</section>
+
+	<section id="esszimmer">
+		<h2>Esszimmer</h2>
+		<div>
+			<h3>Licht</h3>
+			<img src="Bilder/smart_home/light_off.png" alt="off" id="light3" onclick="changeImage(this);">
+			<p>Licht aus</p>
+		</div>
+		<div>
+			<h3>Temperatur</h3>
+			<img src="Bilder/smart_home/temp_low.jpg" alt="">
+			<p>Temperatur 15°</p>
+		</div>
+	</section>
+
+	<section id="küche">
+		<h2>Küche</h2>
+		<div>
+			<h3>Licht</h3>
+			<img src="Bilder/smart_home/light_off.png" alt="off" id="light4" onclick="changeImage(this);">
+			<p>Licht aus</p>
+		</div>
+		<div>
+			<h3>Temperatur</h3>
+			<img src="Bilder/smart_home/temp_low.jpg" alt="">
+			<p>Temperatur 15°</p>
+		</div>
+	</section>
+
+	<section id="außenbereich">
+		<h2>Außenbereich</h2>
+		<div>
+			<h3>Licht</h3>
+		<img src="Bilder/smart_home/light_off.png" alt="off" id="light5" onclick="changeImage(this);">
+			<p>Licht aus</p>
+		</div>
+		<div>
+			<h3>Temperatur</h3>
+			<img src="Bilder/smart_home/temp_high.jpg" alt="">
+			<p>Temperatur 30°</p>
+		</div>
+	</section>
+</main>
+
+
+
+
+
+<script>
+	
+		var person = prompt("Please enter your name");
+
+		if(!(person ==="Name" || person ==="")){
+            alert("Willkommen "+ person);
+		}
+
+
+		console.log("Willkommen " + person);
+
+		function changeImage(element) {
+			console.log(element);
+
+			if(element.alt === "off"){
+				console.log("off");
+				element.alt = "on";
+				element.src = "Bilder/smart_home/light_on.png";
+				element.nextSibling.nextSibling.innerText = "Licht an";
+			}else{
+				element.alt = "off";
+				element.src = "Bilder/smart_home/light_off.png";
+				element.nextSibling.nextSibling.innerText = "Licht aus";
+			}
+		}
+		
+	</script>
+</body>
+</html>

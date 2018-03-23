@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BSA Smart Home</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="mycss.css">
+</head>
+<body>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
+	<div id="navbarNavDropdown" class="navbar-collapse collapse">
+		<ul class="navbar-nav mr-auto">
+
+		</ul>
+		<ul class="navbar-nav">
+			<li class="nav-item"><a class="nav-item nav-link" href="#welcome">Home</a></li>
+			<li class="nav-item"><a class="nav-item nav-link" href="#schlafzimmer">Schlafzimmer</a></li>
+			<li class="nav-item"><a class="nav-item nav-link" href="#wohnzimmer">Wohnzimmer</a></li>
+			<li class="nav-item"><a class="nav-item nav-link" href="#esszimmer">Esszimmer</a></li>
+			<li class="nav-item"><a class="nav-item nav-link" href="#kueche">Kueche</a></li>
+			<li class="nav-item"><a class="nav-item nav-link" href="#aussenbereich">Aussenbereich</a></li>
+		</ul>
+	</div>
+</nav>
+<header>
+
+	<div class="container">
+
+
+
+
+		<div class="row">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="d-block w-100" src="Bilder/smart_home/smart-home-grafik2.jpg" alt="First slide">
+						<h1 class="carousel-caption">Smart Home Controller App v 1.0</h1>
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="Bilder/smart_home/smart_home_grafik.jpg" alt="Second slide">
+						<p class="carousel-caption">BSA 2.Semester</p>
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="Bilder/smart_home/smart-home-header.jpg" alt="Third slide">
+						<p class="carousel-caption">Demo-App</p>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</header>
+
+<main>
+	<section id="welcome">
+		<div  class="container">
+			<h2>Willkommen in Ihrer virtuellen Wohungszentrale!</h2>
+			<h3>Wir ermoeglichen Ihnen die volle Kontrolle ueber Smart Home ....</h3>
+			<div class="row">
+				<div class="col-md-4">
+					<h4>Datenzugriff</h4>
+					<div class="text-center">
+
+						<img src="Bilder/smart_home/einstellungen.png" data-toggle="popover" title="Lorem ipsum"
+							 data-content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr" class="img-rounded" alt="settings">
+					</div>
+					<p>
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+						sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+						sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+						Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+				</div>
+				<div class="col-md-4">
+					<h4>Geraete unabhaengig</h4>
+					<div class="text-center">
+						<img src="Bilder/smart_home/pc_tablet_smartphone.jpg" data-toggle="popover" title="Lorem ipsum"
+							 data-content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr" class="img-rounded" alt="geraete">
+					</div>
+					<p>
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+						sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+						sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+						Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+					</p>
+
+				</div>
+				<div class="col-md-4">
+					<h4>Rund um die Uhr</h4>
+					<div class="text-center">
+						<img src="Bilder/smart_home/clock.png" data-toggle="popover" title="Lorem ipsum" data-content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr" class="img-rounded" alt="uhr">
+					</div>
+					<p>
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+						sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+						sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+						Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section id="schlafzimmer" class="schlaf_ess_aussen bilder">
+		<div class="container">
+			<h2>Schlafzimmer</h2>
+			<div class="row">
+				<div class="offset-md-1"> </div>
+				<div class="col-md-2 text_format_ess_schlaf_aussen">
+					<h3>Licht</h3>
+					<img src="Bilder/smart_home/light_off.png" alt="off" id="light1" onclick="changeImage(this);">
+					<p>Licht aus</p>
+				</div>
+				<div class="offset-md-1">     </div>
+				<div class="col-md-2 text_format_ess_schlaf_aussen">
+					<h3>Temperatur</h3>
+					<img src="Bilder/smart_home/temp_high.jpg" alt="">
+					<p>Temperatur 15°</p>
+				</div>
+				<div class="offset-md-2">  </div>
+				<div class="col-md-4 text_format_ess_schlaf_aussen">
+					<h3>Dummy Text </h3>
+					<p>
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+						ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+						dolores et ea rebum. Stet clita kasd gubergren,
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="wohnzimmer" class="wohn_kueche">
+		<div class="container">
+			<h2>Wohnzimmer</h2>
+			<div class="row">
+				<div class="col-md-4 ">
+
+					<h3>Licht</h3>
+					<img src="Bilder/smart_home/light_off.png" alt="off" id="light2" onclick="changeImage(this);">
+					<p>Licht aus</p>
+
+				</div>
+				<div class="col-md-4">
+					<h3>Temperatur</h3>
+					<img src="Bilder/smart_home/temp_low.jpg" alt="">
+					<p>Temperatur 15°</p>
+				</div>
+				<div class="col-md-4">
+					<h3 class="dummy_text">Dummy Text </h3>
+					<p class="dummy_text">
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+						ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+						dolores et ea rebum. Stet clita kasd gubergren,
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="esszimmer" class="schlaf_ess_aussen bilder">
+		<div class="container">
+			<h2>Esszimmer</h2>
+			<div class="row">
+				<div class="offset-md-1"> </div>
+				<div class="col-md-2 text_format_ess_schlaf_aussen">
+
+					<h3>Licht</h3>
+					<img src="Bilder/smart_home/light_off.png" alt="off" id="light3" onclick="changeImage(this);">
+					<p>Licht aus</p>
+
+				</div>
+				<div class="offset-md-1">     </div>
+				<div class="col-md-2 text_format_ess_schlaf_aussen">
+					<h3>Temperatur</h3>
+					<img src="Bilder/smart_home/temp_high.jpg" alt="">
+					<p>Temperatur 15°</p>
+				</div>
+				<div class="offset-md-2">  </div>
+				<div class="col-md-4 text_format_ess_schlaf_aussen">
+					<h3>Dummy Text </h3>
+					<p>
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+						ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+						dolores et ea rebum. Stet clita kasd gubergren,
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="kueche" class="wohn_kueche">
+		<div class="container">
+			<h2>Kueche</h2>
+			<div class="row">
+				<div class="col-md-4">
+
+					<h3>Licht</h3>
+					<img src="Bilder/smart_home/light_off.png" alt="off" id="light4" onclick="changeImage(this);">
+					<p>Licht aus</p>
+
+				</div>
+				<div class="col-md-4">
+					<h3>Temperatur</h3>
+					<img src="Bilder/smart_home/temp_low.jpg" alt="">
+					<p>Temperatur 15°</p>
+				</div>
+				<div class="col-md-4">
+					<h3 class="dummy_text">Dummy Text </h3>
+					<p class="dummy_text">
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+						ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+						dolores et ea rebum. Stet clita kasd gubergren,
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="aussenbereich" class="schlaf_ess_aussen bilder ">
+		<div class="container">
+			<h2>Aussenbereich</h2>
+			<div class="row">
+				<div class="offset-md-1"> </div>
+				<div class="col-md-2 text_format_ess_schlaf_aussen">
+
+					<h3>Licht</h3>
+					<img src="Bilder/smart_home/light_off.png" alt="off" id="light5" onclick="changeImage(this);">
+					<p>Licht aus</p>
+
+				</div>
+				<div class="offset-md-1">     </div>
+				<div class="col-md-2 text_format_ess_schlaf_aussen">
+					<h3>Temperatur</h3>
+					<img src="Bilder/smart_home/temp_high.jpg" alt="">
+					<p>Temperatur 15°</p>
+				</div>
+				<div class="offset-md-2">  </div>
+				<div class="col-md-4 text_format_ess_schlaf_aussen">
+					<h3>Dummy Text</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+						ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+						dolores et ea rebum. Stet clita kasd gubergren,
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+
+
+
+
+
+<script>
+
+    (function () {
+        $('[data-toggle="popover"]').popover();
+        $('body').scrollspy({ target: '#navbarNavDropdown' })
+    })();
+
+
+
+    function changeImage(element) {
+        console.log(element);
+
+        if(element.alt === "off"){
+            console.log("off");
+            element.alt = "on";
+            element.src = "Bilder/smart_home/light_on.png";
+            element.nextSibling.nextSibling.innerText = "Licht an";
+        }else{
+            element.alt = "off";
+            element.src = "Bilder/smart_home/light_off.png";
+            element.nextSibling.nextSibling.innerText = "Licht aus";
+        }
+    }
+
+</script>
+</body>
+</html>

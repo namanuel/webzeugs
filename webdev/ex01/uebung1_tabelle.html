@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formular</title>
+</head>
+<body>
+
+<form name="formular" action="mailto:nagel.manuel@gmx.at" method="get" onsubmit="formularAbschicken(event)">
+<h1>Patientenverwaltung</h1>
+
+Willkommen im BSA-KIS (BSA Krankenhausinformationssystem)!
+
+<h2>Neuen Patienten anlegen </h2>
+<table>
+	<tr>
+		<td><label for="vorname">Vorname:</label></td>
+		<td><input type="text" name="vorname" id="vorname" placeholder="Vorname" required>*</td>
+	</tr>
+	<tr>
+		<td><label for="nachname">Nachname:</label></td>
+		<td><input type="text" name ="lastname" id="nachname" placeholder="Nachname" required>*</td>
+	</tr>
+	<tr>
+		<td><label for="email">E-Mail:</label></td>
+		<td><input type="email" name ="email" id="email" placeholder="test@me.at" required>*</td>
+	</tr>	
+	<tr>
+		<td><label for="svn">SVN:</label></td>
+		<td><input type="number" name="svn" id="svn" max="9999" placeholder="1234" required>*</td>
+	</tr>
+	<tr>
+		<td><label for="geb">Geburtsdatum:</label></td>
+		<td><input type="date" id="geb" name="bday"></td>
+	</tr>
+	<tr>
+		<td><label for="gender">Geschlecht:</label></td>
+		<td><input type="radio" id="gender" name="gender" value="male"> Männlich 
+		<input type="radio"  name="gender" value="female"> Weiblich 
+		<input type="radio"  name="gender" value="other" checked> keine Angabe</td>
+	</tr>
+	<tr>
+		<td><h3>Vitalparameter:</h3></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><label for="diastolisch">Blutdruck Diastolisch: </label></td>
+		<td><input type="number" id="diastolisch" max="999"></td>
+	</tr>
+	<tr>
+		<td><label for="systolisch">Blutdruck Systolisch: </label></td>
+		<td><input type="number" id="systolisch" max="999"></td>
+	</tr>
+	<tr>
+		<td><label for="puls">Puls: </label></td>
+		<td><input type="number" id="puls" max="999"></td>
+	</tr>
+	<tr>
+		<td><label for="anmerkung">Anmerkungen:</label></td>
+		<td><textarea rows="5" cols="50" name="comment" id="anmerkung" placeholder="Platz für Anmerkungen..."></textarea></td>
+	</tr>
+	<tr>
+		<td><input type="reset"></td>
+		<td><input type="submit"></td>	
+	</tr>
+</table>
+
+</form>
+<div id = "formulartext">
+
+</div>
+
+
+
+<script>
+
+	function formularAbschicken(event){
+		event.preventDefault(); //verhindert den normalen druchgang
+		console.log('Event', event);
+
+		var vorname = document.getElementById("vorname").value;
+		var nachname = document.getElementById("nachname").value;
+		var email= document.getElementById("email").value;
+		var svn= document.getElementById("svn").value;
+		var geb= document.getElementById("geb").value;
+		var gender= document.getElementById("gender").value;
+		var diastolisch= document.getElementById("diastolisch").value;
+		var systolisch= document.getElementById("systolisch").value;
+		var puls= document.getElementById("puls").value;
+		var anmerkung= document.getElementById("anmerkung").value;
+
+		var ausgabe_alert = "Formular wurde von " + vorname + " "+ nachname + " abgeschickt";
+		var ausgabe_div = '<div class="container">'+
+            '  <div class="content">'+
+            '    <h1>Formular Daten</h1>'+
+            '    <div class="text">'+
+				"Vorname : " + vorname + '<br>'+
+            	"Nachname : " + nachname + '<br>'+
+            	"Email : " + email + '<br>'+
+            	"SVN : " + svn + '<br>'+
+            	"Geburtstag : " + geb + '<br>'+
+				"Geschlecht : " + gender + '<br>'+
+				'<h3>Vitalparameter</h3>'+
+            	"Blutdruck diastolisch : " + diastolisch + '<br>'+
+            	"Blutdruck systolisch : " + systolisch + '<br>'+
+           		"Puls : " + puls + '<br>'+
+            	"Anmerkung : " + anmerkung + '<br>'+
+        	'    </div>'+
+            '  </div>'+
+            '</div>';
+        document.getElementById('formulartext').innerHTML = ausgabe_div;
+		alert(ausgabe_alert);
+	}
+</script>
+</body>
+</html>

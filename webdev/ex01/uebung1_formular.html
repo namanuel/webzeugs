@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formular</title>
+</head>
+<body>
+
+<form name="formular" action="mailto:nagel.manuel@gmx.at" method="get">
+<h1>Patientenverwaltung</h1>
+
+Willkommen im BSA-KIS (BSA Krankenhausinformationssystem)!
+
+<h2>Neuen Patienten anlegen </h2>
+
+	
+		Vorname: <input type="text" name="vorname" placeholder="Vorname" required>*<br>
+		Nachname:<input type="text" name ="lastname" placeholder="Nachname" required>*<br>
+		E-Mail: <input type="email" name ="email" placeholder="test@me.at" required>*<br>
+		SVN:<input type="number" name="svn" max="9999" placeholder="1234" required>*<br>
+	
+	
+		Geburtsdatum: <input type="date" name="bday"><br>
+	
+	
+		Geschlecht:
+		<input type="radio" name="gender" value="male"> Männlich 
+		<input type="radio" name="gender" value="female"> Weiblich 
+		<input type="radio" name="gender" value="other" checked> keine Angabe
+		<br>	
+		Vitalparameter:<br>
+		Blutdruck Diastolisch:<input type="number" max="999"><br>
+		Blutdruck Systolisch:<input type="number" max="999"><br>
+		Puls:<input type="number" max="999"><br>
+	
+	
+		Anmerkungen: 
+		<textarea rows="5" cols="50" name="comment" placeholder="Platz für Anmerkungen..."></textarea>
+	
+	
+		<input type="submit">
+		<input type="reset">	
+	
+
+
+</form>
+
+
+</body>
+</html>
